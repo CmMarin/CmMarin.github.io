@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <title>Welcome to my kingdom</title>
+        <link rel="icon" href="images/icon.ico">
+        
+        <style>
+            body{background-color: #232526;
+                 margin: 5%;
+
+            }
+
+            .col-l{background-color: #F2F2F2;
+                    float: left;
+                    padding: 40px;
+                    margin-right: 3%;
+                    border-right: solid 10px #0D0D0D;
+                    height: 400px;
+
+            }
+            h2{color: rgb(56, 56, 56);
+                border-top: solid 7px #353F40;
+                padding-top:15px;
+                margin-bottom: 4px;
+
+            }
+            h3{color: rgb(56, 56, 56);
+                margin-top:0px;
+
+            }
+
+            .col-r{background-color: #cccccc;
+                    padding: 40px;
+                    height: 400px;
+
+            }
+
+            .no-border{border: none;
+            }
+
+            ul{list-style: none;
+                margin-bottom: 40px;
+
+            }
+
+            a{color: #232526;
+             text-decoration: none;
+            }
+
+            a:hover{color: rgb(112, 112, 112);
+
+            }
+
+            li{padding: 5px;
+
+            }
+
+            /*animations*/
+
+            .avatar{border-radius: 50%;
+                    border: solid 5px #0D0D0D;
+                    animation: rot 1.6s ;
+
+            }
+
+            .tel{background-color:blue;
+                color: white;
+                padding: 20px;
+                border-radius: 20px;
+                animation: pulse .8s 2;
+                animation-delay: 1.6s;
+
+            }
+            @keyframes rot {
+                from{ transform: translateX(-1000px) rotate(0deg);}
+                to{ transform: translateX(0px) rotate(1080deg);}
+            }
+
+            @keyframes pulse {
+                from{ background-color: blue;}
+                to{ background-color:blueviolet; }
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <main id="content">
+            <div alt="Left" class="col-l"><img class="avatar" width="250" src="images/ma boi.png" alt="">
+            <h2>Best Boy</h2>
+            <h3> He's kinda cool '-'</h3>
+            
+            </div>
+            <div alt="Right" class="col-r">
+                <h2 class="no-border">My Work</h2>
+                <ul>
+                    <li><a href="https://github.com/CmMarin/CSS-Style/blob/master/style/methods/Global-searchbar.html">Searchbar-CSS</a></li>
+                    <li><a href="https://github.com/CmMarin/CSS-Style/blob/master/style/methods/Pseudo-smile.htm">Smile-CSS</a></li>
+                    <li><a href="https://github.com/CmMarin/CSS-Style/blob/master/style/methods/global-menu.html">Menu-CSS</a></li>
+                </ul>
+                <p>
+                    <a class="tel" href="tel:+007">Call me: +007 &#128241;
+                    </a>
+                </p>
+            </div>
+        </main>
+
+    </body>
+
+</html>
